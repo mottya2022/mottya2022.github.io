@@ -11,54 +11,33 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+#### PhD of Information Science
+Computer Science, The University of Osaka, Japan  
+Apr. 2026 – Present
+#### Master of Information Science
+Multimedia Engineering, The University of Osaka, Japan  
+Apr. 2024 – Mar. 2026
+#### Bachelor of Engineering
+Electronic and Information Engineering, The University of Osaka, Japan  
+Apr. 2020 – Mar. 2024
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+#### Research Assistant
+the University of Osaka, Japan  
+Apr. 2026 – Present
+#### International Visiting Research Trainee
+York University, Canada  
+Jul. 2024 – Oct. 2024
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**Programming Languages** : Python  
+**Software** : Blender, Docker, Git  
+**Languages** : Japanese (native)
 
-Publications
+<!-- Awards
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
+Research Funding
+===== -->

@@ -11,22 +11,22 @@ redirect_from:
 
 Education
 ======
-#### PhD of Information Science
+### PhD of Information Science
 Computer Science, The University of Osaka, Japan  
 Apr. 2026 – Present
-#### Master of Information Science
+### Master of Information Science
 Multimedia Engineering, The University of Osaka, Japan  
 Apr. 2024 – Mar. 2026
-#### Bachelor of Engineering
+### Bachelor of Engineering
 Electronic and Information Engineering, The University of Osaka, Japan  
 Apr. 2020 – Mar. 2024
 
 Work Experience
 ======
-#### Research Assistant
+### Research Assistant
 the University of Osaka, Japan  
 Apr. 2026 – Present
-#### International Visiting Research Trainee
+### International Visiting Research Trainee
 York University, Canada  
 Jul. 2024 – Oct. 2024
   

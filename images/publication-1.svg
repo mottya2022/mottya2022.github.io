@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-label="Publication thumbnail 1">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f2ea"/>
+      <stop offset="100%" stop-color="#d9e7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" rx="28" fill="url(#g1)"/>
+  <rect x="34" y="30" width="532" height="280" rx="22" fill="#ffffff" opacity="0.85" stroke="#c8d2e3"/>
+  <rect x="54" y="54" width="220" height="232" rx="16" fill="#e9f0fb" stroke="#aac1e8"/>
+  <rect x="298" y="54" width="248" height="52" rx="12" fill="#1f4b99" opacity="0.92"/>
+  <rect x="298" y="122" width="178" height="26" rx="10" fill="#cbd9f2"/>
+  <rect x="298" y="160" width="214" height="26" rx="10" fill="#d9e4f7"/>
+  <rect x="298" y="198" width="196" height="26" rx="10" fill="#e6edf9"/>
+  <rect x="298" y="236" width="164" height="26" rx="10" fill="#eef3fb"/>
+  <text x="65" y="92" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1f3b73">Publication</text>
+  <text x="65" y="126" font-family="Arial, sans-serif" font-size="20" fill="#4b5f86">thumbnail</text>
+</svg>

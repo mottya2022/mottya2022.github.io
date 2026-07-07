@@ -1,0 +1,49 @@
+{% include base_path %}
+
+{% if post.image %}
+  {% capture teaser %}{{ post.image }}{% endcapture %}
+{% elsif post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% elsif post.teaser %}
+  {% capture teaser %}{{ post.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+{% if teaser and teaser != "" %}
+  {% if teaser contains "://" %}
+    {% assign teaser_url = teaser %}
+  {% else %}
+    {% assign teaser_url = teaser | prepend: "/images/" | prepend: base_path %}
+  {% endif %}
+{% endif %}
+
+<article class="publication__item" itemscope itemtype="http://schema.org/CreativeWork">
+  {% if teaser_url %}
+    <a class="publication__figure" href="{{ base_path }}{{ post.url }}" rel="permalink" aria-hidden="true" tabindex="-1">
+      <img src="{{ teaser_url }}" alt="">
+    </a>
+  {% endif %}
+
+  <div class="publication__body{% unless teaser_url %} publication__body--full{% endunless %}">
+    <h2 class="publication__title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    </h2>
+
+    {% if post.citation %}
+      <p class="publication__meta">{{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% elsif post.venue or post.date %}
+      <p class="publication__meta">
+        {% if post.venue %}{{ post.venue }}{% endif %}
+        {% if post.venue and post.date %}, {% endif %}
+        {% if post.date %}{{ post.date | default: "1900-01-01" | date: "%B %Y" }}{% endif %}
+      </p>
+    {% endif %}
+  </div>
+</article>

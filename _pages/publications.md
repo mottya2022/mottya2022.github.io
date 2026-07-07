@@ -1,0 +1,12 @@
+---
+permalink: /publications
+title: "Publications"
+author_profile: true
+---
+
+## Don’t Mask Out the Background! Natural-Light Photometric Stereo via Illumination Reconstruction
+<ins>Taiga Hashida</ins>, Hiroaki Santo, and Fumio Okura  
+Proceedings of the European Conference on Computer Vision (ECCV), 2026.  
+
+<!-- [[Paper]]()
+[[Project Page]]() -->

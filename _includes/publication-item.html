@@ -36,14 +36,22 @@
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </h2>
 
-    {% if post.citation %}
-      <p class="publication__meta">{{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    {% elsif post.venue or post.date %}
-      <p class="publication__meta">
-        {% if post.venue %}{{ post.venue }}{% endif %}
-        {% if post.venue and post.date %}, {% endif %}
+    {% if post.author or post.authors %}
+      <p class="publication__meta publication__meta--authors">
+        {{ post.author | default: post.authors }}
+      </p>
+    {% endif %}
+
+    {% if post.publisher or post.venue or post.date %}
+      <p class="publication__meta publication__meta--source">
+        {% if post.publisher %}{{ post.publisher }}{% elsif post.venue %}{{ post.venue }}{% endif %}
+        {% if (post.publisher or post.venue) and post.date %}, {% endif %}
         {% if post.date %}{{ post.date | default: "1900-01-01" | date: "%B %Y" }}{% endif %}
       </p>
+    {% endif %}
+
+    {% if post.citation %}
+      <p class="publication__meta publication__meta--citation">{{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     {% endif %}
   </div>
 </article>

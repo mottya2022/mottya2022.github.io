@@ -95,6 +95,15 @@
   line-height: 1.6;
 }
 
+.publication__meta--authors {
+  font-weight: 500;
+}
+
+.publication__meta--source,
+.publication__meta--citation {
+  color: var(--global-text-color-light);
+}
+
 .publication__description {
   margin-top: 0.35rem;
   font-size: $type-size-6;

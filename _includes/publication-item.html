@@ -26,15 +26,13 @@
 
 <article class="publication__item" itemscope itemtype="http://schema.org/CreativeWork">
   {% if teaser_url %}
-    <a class="publication__figure" href="{{ base_path }}{{ post.url }}" rel="permalink" aria-hidden="true" tabindex="-1">
+    <div class="publication__figure" aria-hidden="true">
       <img src="{{ teaser_url }}" alt="">
-    </a>
+    </div>
   {% endif %}
 
   <div class="publication__body{% unless teaser_url %} publication__body--full{% endunless %}">
-    <h2 class="publication__title" itemprop="headline">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-    </h2>
+    <h2 class="publication__title" itemprop="headline">{{ title }}</h2>
 
     {% if post.author or post.authors %}
       <p class="publication__meta publication__meta--authors">
@@ -52,6 +50,26 @@
 
     {% if post.citation %}
       <p class="publication__meta publication__meta--citation">{{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% endif %}
+
+    {% if post.projecturl and post.projecturl != "" %}
+      {% assign project_url = post.projecturl %}
+    {% else %}
+      {% assign project_url = base_path | append: post.url %}
+    {% endif %}
+
+    {% if post.paperurl or project_url %}
+      <p class="publication__links">
+        {% if post.paperurl %}
+          <a class="publication__link" href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Paper</a>
+        {% endif %}
+        {% if post.paperurl and project_url %}
+          <span class="publication__link-separator">|</span>
+        {% endif %}
+        {% if project_url %}
+          <a class="publication__link" href="{{ project_url }}">Project Page</a>
+        {% endif %}
+      </p>
     {% endif %}
   </div>
 </article>

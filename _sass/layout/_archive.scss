@@ -78,15 +78,6 @@
   font-family: $sans-serif-narrow;
   font-size: $type-size-4;
   line-height: 1.35;
-
-  a {
-    color: var(--global-text-color);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .publication__meta {
@@ -101,6 +92,21 @@
 
 .publication__meta--source,
 .publication__meta--citation {
+  color: var(--global-text-color-light);
+}
+
+.publication__links {
+  margin: 0.5rem 0 0;
+  font-size: $type-size-6;
+  line-height: 1.6;
+}
+
+.publication__link {
+  text-decoration: underline;
+}
+
+.publication__link-separator {
+  margin: 0 0.45rem;
   color: var(--global-text-color-light);
 }
 

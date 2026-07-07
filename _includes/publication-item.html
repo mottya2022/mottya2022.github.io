@@ -40,9 +40,11 @@
       </p>
     {% endif %}
 
-    {% if post.publisher or post.venue %}
+    {% if post.publisher or post.venue or post.year or post.date %}
       <p class="publication__meta publication__meta--source">
         {% if post.publisher %}{{ post.publisher }}{% elsif post.venue %}{{ post.venue }}{% endif %}
+        {% if (post.publisher or post.venue) and (post.year or post.date) %}, {% endif %}
+        {% if post.year %}{{ post.year }}{% elsif post.date %}{{ post.date | date: "%Y" }}{% endif %}
       </p>
     {% endif %}
 

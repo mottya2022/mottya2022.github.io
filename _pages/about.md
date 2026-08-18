@@ -8,4 +8,4 @@ redirect_from:
 ---
 
 I am a PhD student in the Intelligence and Sensing Laboratory at the University of Osaka, Japan.
-My research focuses on computer vision, 3D recinstruction, and physics-based vision.
+My research focuses on computer vision, 3D reconstruction, and physics-based vision.
